@@ -14,7 +14,8 @@
     "randomstring": "^1.1.5",
     "sha1": "^1.1.1",
     "superagent": "^3.8.0",
-    "urlencode": "^1.1.0"
+    "urlencode": "^1.1.0",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "grunt": "^1.0.1",
@@ -29,5 +30,10 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/wongcyrus/LexInterceptor.git"
-  }
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
